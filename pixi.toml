@@ -1,0 +1,17 @@
+[workspace]
+authors = ["Teun van Woerkom <teun.vanwoerkom@deltares.nl>"]
+channels = ["conda-forge", "bioconda"]
+name = "groundwater-model-processing"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+imod = ">=1.0.0.post1,<2"
+matplotlib = ">=3.10.8,<4"
+numpy = ">=2.3.5,<3"
+xarray = ">=2025.12.0,<2026"
+geopandas = ">=1.1.2,<2"
+pandas = ">=2.3.3,<3"
+snakemake = ">=9.14.5,<10"
