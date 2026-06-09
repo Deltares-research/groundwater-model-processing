@@ -279,7 +279,7 @@ def read_mzfile(fn, mztype=None, collength=None, header=None, skiprows=None, **k
             colspecs='infer'
         
     return pd.read_fwf(fn,colspecs=colspecs,header=header,names=names,skiprows=skiprows,
-                       index_col=None,date_parser=parse_mztime,parse_dates=parse_dates, **kwargs)
+                       index_col=None,date_format='%Y%m%d.000000',parse_dates=parse_dates, **kwargs)
 
 def create_fmtstr(desc):
     '''create default format string from file description'''
